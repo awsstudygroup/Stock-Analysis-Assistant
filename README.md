@@ -1,4 +1,4 @@
-#  Stock Analysis Assistant
+# Stock Analysis Assistant
 
 ## Overview
 This project is a simple demonstration of Amazon Bedrock and the Anthropic Claude 3 Sonnet model integrated with Langchain and Streamlit. For more details, please refer to the following links:
@@ -38,10 +38,18 @@ Stock-Analysis-Assistant/
 
 4. **Clone the Repository:**
    ```sh
-   git clone https://github.com/nguyendinhthi0705/Study-Assistant.git
+   git clone https://github.com/awsstudygroup/Stock-Analysis-Assistant
    cd Stock-Analysis-Assistant
+   ```
+
+5. **Install Required Packages:**
+   ```sh
    pip3 install -r requirements.txt
-   streamlit run Home.py --server.port 8080
+   ```
+
+6. **Run the Application:**
+   ```sh
+   streamlit run pages/Home.py --server.port 8080
    ```
 
 ## Architecture
