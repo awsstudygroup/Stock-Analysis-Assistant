@@ -56,7 +56,7 @@
 #### Step 6: Run the Application
 1. Start the Streamlit application:
    ```sh
-   streamlit run pages/Home.py --server.port 8080
+   streamlit run Home.py --server.port 8080
    ```
 2. Access the application by navigating to `http://localhost:8080` in your web browser.
 

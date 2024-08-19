@@ -106,7 +106,7 @@ def suggest_writing_document(input_text):
 def search(question, callback):
     """Search for answers based on the provided question using Bedrock and Amazon Knowledge Bases."""
     retriever = AmazonKnowledgeBasesRetriever(
-        knowledge_base_id="EWVHJIY9AS",
+        knowledge_base_id="ZWPXJNPCQL",
         retrieval_config={
             "vectorSearchConfiguration": {
                 "numberOfResults": 3,
@@ -159,7 +159,7 @@ def search(question, callback):
 def search_old(question, callback):
     """Old implementation of search using RetrievalQA."""
     retriever = AmazonKnowledgeBasesRetriever(
-        knowledge_base_id="EWVHJIY9AS",
+        knowledge_base_id="ZWPXJNPCQL",
         retrieval_config={
             "vectorSearchConfiguration": {
                 "numberOfResults": 3,

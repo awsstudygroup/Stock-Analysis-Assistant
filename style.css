@@ -1,0 +1,290 @@
+@font-face {
+  src: url("./assets/fonts/AmazonEmber/Amazon-Ember-Medium.ttf");
+  font-family: "Amazon Ember" !important;
+}
+
+.main, h3, div, p, span {
+  font-family: Amazon Ember, sans-serif !important;
+}
+
+.main > .block-container {
+  max-width: 80%;
+  padding: 6rem 1rem 10rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section[data-testid="stSidebar"]{
+  background-color: #fdfdfd;
+}
+
+ul[data-testid="stSidebarNavItems"]{
+  padding-top: 4rem;
+}
+
+ul[data-testid="stSidebarNavItems"] li a {
+  padding: 10px 15px;
+  display: block;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+ul[data-testid="stSidebarNavItems"] li a:hover,
+ul[data-testid="stSidebarNavItems"] li a.active {
+  background-color: #e0f2f1;
+  color: #00796b;
+}
+
+h1 {
+  color: #1a73e8;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #1a73e8;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+div[data-testid="stHeading"] {
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.stHeadingContainer {
+  margin-bottom: 40px;
+}
+
+.stMarkdown p {
+  color: #333333;
+  font-size: 1.1em;
+}
+
+.stTextInput input {
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.stTextInput input:focus,
+.stTextArea:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.stButton button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.stButton button:hover {
+  background-color: #158a1b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stButton button:focus,
+.stButton button:active,
+.stButton button:visited {
+  background-color: #015e05;
+  color: white;
+}
+
+.stMarkdown pre {
+  background-color: #f1f3f4;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 10px;
+  width: 98%;
+  background-color: white;
+  color: #aaaaaa;
+  text-align: end;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #e0e0e0;
+}
+
+div[data-testid="stSidebarCollapseButton"] {
+  margin-top: 10px;
+}
+
+div[data-testid="stSidebarNav"] {
+  padding-top: 20px;
+}
+
+div[data-testid="stSidebarNav"]::before {
+  content: "Stock Analysis Assistant";
+  font-size: 23px;
+  font-weight: 700;
+  position: relative;
+  padding: 1rem;
+}
+
+div[data-testid="stSidebarContent"] {
+  border-right: 1px solid #e0e0e0;
+}
+
+div[data-testid="stMarkdownContainer"] li {
+  color: rgb(85, 88, 103);
+}
+
+button[kind="header"]{
+  margin-top: 15px;
+}
+
+.st-emotion-cache-14li2d9 {
+  padding-top: 50px;
+}
+
+.stTextArea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.stTitle,
+.stSubheader {
+  color: #333;
+}
+
+.chat-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666666;
+}
+
+.upload-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.extracted-text {
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #333333;
+  white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+
+.stFileUploader {
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.stFileUploader:hover {
+  border-color: #4caf50;
+}
+
+.title {
+  color: #2E7D32;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.chat-box {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.message-user {
+  background-color: #d3e4ff;
+  border-radius: 10px 10px 0px 10px;
+  padding: 8px 15px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.message-assistant {
+  background-color: #f3f3f3;
+  border-radius: 10px 10px 10px 0px;
+  padding: 8px 15px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.input-box {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1800px) {
+  .st-emotion-cache-13ln4jf {
+    max-width: 80%;
+  }
+  .stButton button div[data-testid="stMarkdownContainer"] p{
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1500px) {
+  .main > .block-container {
+    max-width: 80%;
+  }
+  .stButton button div[data-testid="stMarkdownContainer"] p{
+    font-size: 13px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .main > .block-container {
+    max-width: 80%;
+  }
+  .stButton button div[data-testid="stMarkdownContainer"] p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main > .block-container {
+    max-width: 90%;
+  }
+  .stButton button div[data-testid="stMarkdownContainer"] p {
+    font-size: 12px;
+  }
+  
+  ul[data-testid="stSidebarNavItems"]{
+    font-size: 0.75rem;
+  }
+  
+  div[data-testid="stSidebarNav"]{
+    font-size: 18px;
+  }
+}
